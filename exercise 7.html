@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Prompt with Condition</title>
+</head>
+
+<body>
+  <form>
+    Student Name:
+    <input type="text" name="studentname" id="studentname" />
+    Password:
+    <input type="password" id="password" />
+    <input type="button" name="check" value="Login" onclick="checkingnull()" />
+  </form>
+
+  <script>
+    function checkingnull() {
+      const name = document.getElementById("studentname").value;
+      const pass = document.getElementById("password").value;
+
+      const stdname = "AA";
+      const stdpass = "123";
+
+      if (name === stdname && pass === stdpass) {
+        alert("Hello " + name);
+         window.location.href = "https://www.google.com";
+      } else {
+        alert("Your name or password is incorrect");
+        document.getElementById("studentname").focus();
+      }
+    }
+  </script>
+</body>
+
+</html>
