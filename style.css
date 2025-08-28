@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+}
+
+::-webkit-scrollbar {
+width: 6px;
+background-color: #333;
+}
+
+/* Handle  */
+::-webkit-scrollbar-thumb {
+    background: lightpink;
+    border-radius: 5px;
+}
+
+/* handle on hover  */
+::-webkit-scrollbar-thumb:hover {
+    background: palevioletred;
+}
+
+body{
+    background-color: #0d0909;
+    color: white;
+
+}
+
+.filter{
+    width: 1200px;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.button{
+padding: 1em;
+cursor: pointer;
+}
+
+.buttons {
+    margin-bottom: 2em;
+}
+
+.cards {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 380px;
+    padding: 5em;
+}
+
+.shoe {
+    background-color: darkgreen;
+}
+
+.shirt {
+    background-color: cadetblue;
+}
+
+.pant {
+    background-color: coral;
+}

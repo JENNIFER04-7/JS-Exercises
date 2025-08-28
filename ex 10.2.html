@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Statement</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <div id="arrayOutput"></div>
+    <p id="demo"></p>
+
+    <script>
+        // Declare array with let
+        let myarray = [];
+        myarray[0] = "First Element";
+        myarray[1] = "Second Element";
+        myarray[2] = "Third Element";
+
+        // Show array values inside a div
+        let output = "";
+        for (let i = 0; i < myarray.length; i++) {
+            output += myarray[i] + "<br>";
+        }
+        document.getElementById("arrayOutput").innerHTML = output;
+
+        // Another array
+        let colors = ["Green","Yellow","Red"]; 
+        document.getElementById("demo").innerHTML = colors.join(", ");
+    </script>
+</body>
+</html>
